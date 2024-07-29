@@ -18,13 +18,13 @@ namespace RW_CustomPawnGeneration
 
 			Settings.IntDefaults[GenderWindow.GenderSlider] = 50;
 
-			Settings.IntDefaults[AgeWindow.MaxAge] = 99;
-			Settings.IntDefaults[AgeWindow.AgeTick] = 1;
-			Settings.IntDefaults[Settings.CustomAging] = 0;
-			Settings.IntDefaults[Settings.UngenderedParent] = 0;
+			Settings.IntDefaults[AgeWindow.MaxAge] = 999;
+			Settings.IntDefaults[AgeWindow.AgeTick] = 1000;
+			Settings.IntDefaults[Settings.CustomAging] = 999;
+			Settings.IntDefaults[Settings.UngenderedParent] = 1000;
 
 			foreach (BodyTypeDef def in DefDatabase<BodyTypeDef>.AllDefs)
-				Settings.IntDefaults[def.defName] = 1;
+				Settings.IntDefaults[def.defName] = 99;
 
 
 			// Patch hooks.
